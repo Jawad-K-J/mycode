@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+int n=50;
+int *p;
+int **pp;
+p=&n;
+pp=&p;
+printf("\n Address of n = %x\n",p);
+printf("\nAddress of p = %x\n",pp);
+printf("\nValue stored at p = %d\n",*p);
+printf("\nValue stored at pp = %d\n",**pp);
+}

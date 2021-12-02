@@ -1,0 +1,24 @@
+#include<stdio.h>
+void strreverse(char x[]);
+void main()
+{
+char a[100];
+printf("Enter a string : ");
+gets(a);
+strreverse(a);
+}
+void strreverse(char x[])
+{
+int i,j,count=0;
+char y[100];
+while(x[count]!='\0')
+count++;
+j=count-1;
+for(i=0;i<count;i++)
+{
+y[i]=x[j];
+j--;
+}
+y[i]='\0';
+printf("Reversed string is : %s",y);
+}

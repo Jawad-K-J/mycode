@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+int s=0,n,d,a;
+printf("Enter a digit : ");
+scanf("%d",&n);
+a=n;
+while(n!=0)
+{
+ d=n%10;
+ s=s+(d*d*d);
+ n=n/10;
+}
+if(a == s)
+printf("Digit is armstrong");
+else
+printf("Digit is not armstrong");
+}

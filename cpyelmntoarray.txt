@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+int n,a[25],i,b[25];
+printf("Enter the limit : ");
+scanf("%d",&n);
+printf("Enter the array elements : ");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+for(i=0;i<n;i++)
+b[i]=a[i];
+printf("\nCopied array :  \n");
+for(i=0;i<n;i++)
+printf("\t %d",b[i]);
+}

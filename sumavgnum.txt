@@ -1,0 +1,25 @@
+#include<stdio.h>
+int fun(int n);
+int s;	
+void main()
+{
+int n,a,i,s1;
+float avg;
+printf("Enter the limit : ");
+scanf("%d",&n);
+printf("Enter the numbers : ");
+for(i=0;i<n;i++)
+{
+scanf("%d",&a);
+s1=fun(a);
+}
+printf("Sum = %d",s1);
+avg=s1/n;
+printf("\nAverage = %f",avg);
+}
+int fun(int n)
+{
+s=s+n;
+return(s);
+}
+

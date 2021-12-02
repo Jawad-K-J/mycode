@@ -1,0 +1,11 @@
+#include <stdio.h>
+void main ( )
+{
+int n, month, days;
+printf("Enter the number : ");
+scanf("%d",&n);
+month= n/30;
+days=n%30;
+printf("Months = %d\n",month);
+printf("Days = %d\n",days);
+}

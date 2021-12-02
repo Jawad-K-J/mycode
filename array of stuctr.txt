@@ -1,0 +1,33 @@
+#include<stdio.h>
+struct stud
+{
+int id,age,m1,m2,total;
+char name[10];
+}s[25];
+void main()
+{
+int i,n;
+printf("Enter number of students : ");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("\n\nEnter id :\t");
+scanf("%d",&s[i].id);
+printf("Enter name:\t");
+scanf("%s",s[i].name);
+printf("Enter age:\t");
+scanf("%d",&s[i].age);
+printf("Enter mark1:\t");
+scanf("%d",&s[i].m1);
+printf("Enter mark2:\t");
+scanf("%d",&s[i].m2);
+s[i].total=s[i].m1+s[i].m2;
+}
+printf("\n\t\t\t *****STUDENT RECORDS*****");
+printf("\nid\t Name\t\tAge\t\tMark1\t\tMark2\t\tTotal");
+for(i=0;i<n;i++)
+{
+printf("\n%d\t",s[i].id);          
+printf("%s\t\t%d\t\t%d\t\t%d\t\t%d",s[i].name,s[i].age,s[i].m1,s[i].m2,s[i].total);
+}
+}

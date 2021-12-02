@@ -1,0 +1,25 @@
+#include<stdio.h>
+int fib(int n);
+int fib(int n)
+{
+if((n==1)||(n==0))
+{
+return n;
+}
+else
+{
+return fib(n-1) + fib(n-2);
+}
+}
+void main ()
+{
+int n,m=0,i;
+printf("Enter a limit :");
+scanf("%d",&n);
+printf("Fibonacci series is:\n");
+for(i=0;i<n;i++)
+{
+printf("%d\t",fib(m));
+m++;
+}
+}

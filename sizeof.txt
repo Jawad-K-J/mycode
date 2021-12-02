@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+int ch;
+printf("Enter type of variable \n1.  Integer \n2.  Float \n3.  Character \n4.  Double\n");
+scanf("%d",&ch);
+switch(ch)
+{
+ case 1:printf("Size of variable : ");
+            printf("%lu\n",sizeof(int));
+            break;
+case 2:printf("Size of variable : ");
+           printf("%lu\n",sizeof(float));
+           break;
+case 3:printf("Size of variable");
+           printf("%lu\n",sizeof(char));
+           break;
+case 4:printf("Size of variable");
+           printf("%lu\n",sizeof(double));
+           break;
+default:printf("Invalid option");
+}
+}

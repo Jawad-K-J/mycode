@@ -1,0 +1,22 @@
+#include<stdio.h>
+#define pi 3.14
+void area(int);
+void perimeter(int);
+void main()
+{
+int r;
+printf("Enter the radius : ");
+scanf("%d",&r);
+area(r);
+perimeter(r);
+}
+void area(int n)
+{
+float a=pi*n*n;
+printf("\nArea of circle = %f",a);
+}
+void perimeter(int n)
+{
+float p=2*pi*n;
+printf("\nPerimeter of circle = %f",p);
+}

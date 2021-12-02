@@ -1,0 +1,26 @@
+#include<stdio.h>
+void main()
+{
+int i,n,j=0;
+printf("Enter a digit : ");
+scanf("%d",&n);
+for(i=2;i<=n-1;i++)
+{
+if(n%i == 0)
+  {
+j++;
+break;
+}
+}
+if(n == 1)
+j++;
+else 
+{ 
+if(n == 2)
+j=0;
+}
+if(j == 0)
+ printf("Digit is prime number");
+ else
+ printf("Digit is not prime number");
+}
